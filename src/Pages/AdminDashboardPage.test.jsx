@@ -21,7 +21,7 @@ const mockCampaigns = [
   { id: 'c1', name: 'Campanha Teste', status: 'em-revisao' },
 ];
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://ongplus-backend.onrender.com/api';
 
 const server = setupServer(
   http.get(`${BASE_URL}/v1/admin/review/ngos/`, () => HttpResponse.json(mockNgos)),
